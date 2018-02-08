@@ -1,5 +1,6 @@
 package com.excers;
 
+import junit.framework.Assert;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -31,8 +32,11 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
+    
     public void testApp()
     {
-        assertTrue( true );
+    	App a=new App();
+        Assert.assertEquals(9,a.multiply(3));
+        Assert.assertEquals(10,a.multiply(3));
     }
 }
